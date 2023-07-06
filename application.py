@@ -3,7 +3,33 @@ import pyxel
 
 from game_of_life.background import Background
 from game_of_life.game_engine import generation_evaluation
-from game_of_life.fixtures import A, B, C, CELL, D, DELAY, E, FPS, G, H, I, K, L, M, MAXIMUM, N, O, R, S, T, U, V, W
+from game_of_life.fixtures import (
+    A,
+    APOSTROPHE,
+    B,
+    C,
+    CELL,
+    D,
+    DELAY,
+    E,
+    FPS,
+    G,
+    H,
+    I,
+    K,
+    L,
+    M,
+    MAXIMUM,
+    N,
+    O,
+    R,
+    S,
+    SPACE,
+    T,
+    U,
+    V,
+    W,
+)
 
 
 class App:
@@ -24,9 +50,8 @@ class App:
         self.render_letters(30, [T, O])
         self.render_letters(40, [T, H, E])
         self.render_letters(50, [R, U, N, T, I, M, E])
-        self.render_letters(60, [R, E, V, O, L, U, T, I, O, N])
-        self.render_letters(70, [K, N, O, W, L, E, D, G, E])
-        self.render_letters(80, [B, A, S, E])
+        self.render_letters(60, [R, E, V, O, L, U, T, I, O, N, APOSTROPHE, S])
+        self.render_letters(70, [K, N, O, W, L, E, D, G, E, SPACE, B, A, S, E])
 
     def render_letters(self, y_offset, letters):
         m = 0
