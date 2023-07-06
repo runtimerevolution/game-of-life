@@ -21,6 +21,12 @@ class App:
 
     def initial_cells(self):
         self.render_letters(20, [W, E, L, C, O, M, E])
+        self.render_letters(30, [T, O])
+        self.render_letters(40, [T, H, E])
+        self.render_letters(50, [R, U, N, T, I, M, E])
+        self.render_letters(60, [R, E, V, O, L, U, T, I, O, N])
+        self.render_letters(70, [K, N, O, W, L, E, D, G, E])
+        self.render_letters(80, [B, A, S, E])
 
     def render_letters(self, y_offset, letters):
         m = 0
